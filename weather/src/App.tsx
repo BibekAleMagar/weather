@@ -13,7 +13,7 @@ function App () {
   return(
     <>
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter >
+        <BrowserRouter basename="/weather" >
         <Routes>
           <Route path="/" element={<Weather />} />
           <Route path="/forecast" element={<Forecast />} />

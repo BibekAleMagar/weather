@@ -15,7 +15,7 @@ function Weather() {
   const [active, setActive] = useState("c");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [day, setDay] = useState("");
+
 
 
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ function Weather() {
       const dateObj = new Date(displayData.dt * 1000);
       setDate(dateObj.toLocaleDateString());
       setTime(dateObj.toLocaleTimeString());
-      setDay(dateObj.toLocaleDateString("en-US", { weekday: "long" }));
+    
     }
   }, [displayData]);
 
