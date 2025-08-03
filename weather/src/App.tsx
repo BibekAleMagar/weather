@@ -6,7 +6,15 @@ import Forecast from "./components/fiveDayWeather";
 
 
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient(
+  {
+    defaultOptions: {
+      queries: {
+      
+      }
+    }
+  }
+)
 
 function App () {
 
